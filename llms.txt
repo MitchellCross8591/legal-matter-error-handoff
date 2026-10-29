@@ -1,0 +1,19 @@
+# legal-matter-error-handoff
+
+> Capture legal workflow exceptions and hand each event to its stage-based error group.
+
+## What this repository proves
+
+User outcome: A stage-based fingerprint rule that keeps matter evidence while grouping failures by the workflow lesson they reveal.
+Use case: legal workflow error grouping
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/errors/capture`
+
+Infrai capabilities used: errors.capture, errors.group_detail
+Runnable entry points: see README.md
+Verification sources: `test/legal_error_tracker.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

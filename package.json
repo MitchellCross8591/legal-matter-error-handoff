@@ -1,0 +1,23 @@
+{
+  "name": "legal-matter-error-handoff",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/matter_intake_service.ts",
+    "example": "tsx src/matter_intake_service.ts --example",
+    "test": "tsx --test test/legal_error_tracker.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
